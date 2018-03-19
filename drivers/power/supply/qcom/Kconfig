@@ -100,4 +100,9 @@ config QPNP_QNOVO
 	  module. It also allows userspace code to read diagnostics of voltage
 	  and current measured during certain phases of the pulses.
 
+config USB_OVERHEAT_MITIGATION
+	tristate "Google USB Overheat Mitigation"
+	help
+	  Say Y here to enable Google USB overheat mitigation
+
 endmenu
