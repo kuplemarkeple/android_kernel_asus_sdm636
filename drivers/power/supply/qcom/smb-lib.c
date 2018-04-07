@@ -4917,7 +4917,7 @@ static int typec_try_sink(struct smb_charger *chg)
 	chg->try_sink_active = true;
 
 	/* force SNK mode */
-	val.intval = POWER_SUPPLY_TYPEC_PR_SINK;
+	val.intval = POWER_SUPPLY_TYPEC_PR_NONE;
 	rc = smblib_set_prop_typec_power_role(chg, &val);
 	if (rc < 0) {
 		smblib_err(chg, "Couldn't set UFP mode rc=%d\n", rc);
