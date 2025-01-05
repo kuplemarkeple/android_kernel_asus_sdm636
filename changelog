@@ -1,0 +1,32 @@
+<b><#selectbg_g>Jan 24,2025</#></b>
+
+  <*> Based from LA.UM.9.2.r1-03700-SDMxx0.0</*>
+  <*> KernelSU-Next support</*>
+  <*> APatch support</*>
+  <*> Add Some Tweak Changes, and Improvements</*>
+
+<b><#selectbg_g>Disable KernelSU if you want to use APatch</#></b>
+
+
+
+<b><#selectbg_g>NOTES eng:</#></b>
+
+  <*> I think the 1TB storage problem no longer exists:)</*>
+  <*> Kernel need sometimes to settle.</*>
+
+
+
+<b><#selectbg_g>NOTES id:</#></b>
+  <*> Saya rasa masalah penyimpanan 1TB pada KernelSU sudah tidak ada lagi:)</*>
+  <*> Kernel perlu beberapa waktu untuk beradaptasi.</*>
+
+
+
+<b><#selectbg_g>AROMA installer MOD by :</#></b>
+
+  <*> Ryuuji @ItsRyuujiX</*>
+
+
+
+  <*> You have additional income? please donate</*>
+  <*> Berikan kami donasi supaya kernel ini selalu update!</*>
