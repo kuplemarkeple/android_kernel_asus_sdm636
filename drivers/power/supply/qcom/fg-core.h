@@ -463,7 +463,6 @@ struct fg_chip {
 	struct work_struct	esr_filter_work;
 	struct alarm		esr_filter_alarm;
 	ktime_t			last_delta_temp_time;
-	struct qpnp_vadc_chip	*vadc_dev;
 };
 
 /* Debugfs data structures are below */
