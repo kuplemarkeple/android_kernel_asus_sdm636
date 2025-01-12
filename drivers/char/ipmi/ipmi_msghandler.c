@@ -2645,7 +2645,7 @@ get_guid(ipmi_smi_t intf)
 	if (rv)
 		/* Send failed, no GUID available. */
 		intf->bmc->guid_set = 0;
-	wait_event(intf->waitq, intf->bmc->guid_set != 2);
+	wait_event_interruptible(intf->waitq, intf->bmc->guid_set != 2);
 	intf->null_user_handler = NULL;
 }
 
@@ -2880,7 +2880,7 @@ int ipmi_register_smi(const struct ipmi_smi_handlers *handlers,
 		}
 
 		/* Wait for the channel info to be read. */
-		wait_event(intf->waitq,
+		wait_event_interruptible(intf->waitq,
 			   intf->curr_channel >= IPMI_MAX_CHANNELS);
 		intf->null_user_handler = NULL;
 	} else {
