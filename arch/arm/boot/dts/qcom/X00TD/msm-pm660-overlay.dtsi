@@ -84,6 +84,9 @@
 };
 
 &pm660_fg {
+    qcom,battery-thermal-coefficients = [9d 50 ff];
+	qcom,cl-min-temp = <150>;
+	qcom,cl-max-temp = <550>;
 	qcom,fg-esr-timer-asleep = <160 256>;
 	qcom,fg-cutoff-voltage = <3400>;
 	qcom,fg-empty-voltage = <2800>;
@@ -92,14 +95,15 @@
 	qcom,fg-esr-tight-lt-filter-micro-pct = <2000>;
 	qcom,fg-esr-broad-lt-filter-micro-pct = <2200>;
 	qcom,slope-limit-temp-threshold = <150>;
-	qcom,slope-limit-coeffs = <1 1 1 1>;
+	qcom,slope-limit-coeffs = <3 3 3 3>;
 	qcom,fg-chg-term-current = <150>;
 	qcom,fg-sys-term-current = <(-200)>;
 	qcom,hold-soc-while-full;
 	qcom,linearize-soc;
 	qcom,fg-force-load-profile;
-	qcom,fg-jeita-thresholds = <0 1 59 60>;
+	qcom,fg-jeita-thresholds = <0 5 55 60>;
 	qcom,fg-jeita-hyst-temp = <3>;
+	qcom,fg-batt-temp-delta = <6>;
 	qcom,fg-recharge-voltage = <4150>;
 	qcom,fg-recharge-soc-thr = <98>;
 	qcom,fg-auto-recharge-soc;

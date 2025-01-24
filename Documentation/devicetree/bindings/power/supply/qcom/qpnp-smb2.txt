@@ -109,7 +109,7 @@ Charger specific properties:
 	        1 - Treat as a DCP
 	        2 - Treat as a SDP
 	        3 - Disable charging
-                4 - Suspend USB input
+	        4 - Suspend USB input
 
 - qcom,hvdcp-disable
   Usage:      optional
